@@ -1,0 +1,262 @@
+:root {
+  --color1: #b12d05;
+  --color2: #334b9a;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.eng-films,
+footer {
+  background: url(../img/pattern_english.png), var(--color1);
+  background: url(../img/pattern_english.png), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: url(../img/pattern_english.png), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: url(../img/pattern_english.png), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+  filter: url(../img/pattern_english.png),
+    progid: DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color1), GradientType=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-link {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 20px;
+}
+
+.nav-link active {
+  color: var(--color2);
+}
+
+.link-6 {
+  padding-left: 60px;
+}
+
+.eng_play {
+  background-color: var(--color1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 30px auto;
+  transition: all 0.2s ease;
+}
+
+.eng_play:hover {
+  background-color: var(--color2);
+}
+
+.eng_triangle {
+  margin-right: -3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent var(--bs-white);
+}
+
+.btn-eng {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 8px 30px;
+  color: var(--bs-white);
+  background-color: var(--color2);
+}
+
+.btn-eng:hover {
+  background-color: var(--color1);
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.color1 {
+  color: var(--color1);
+}
+
+.color2 {
+  color: var(--color2);
+}
+
+.bg1 {
+  background-color: var(--color1);
+}
+
+.bg2 {
+  background-color: var(--color2);
+}
+
+h3 {
+  text-align: center;
+}
+
+.h3-eng {
+  margin: 15px 0;
+}
+
+.h5-border {
+  border-radius: 50px;
+  border: 2px solid var(--color1);
+  cursor: pointer;
+}
+
+.h5-border:hover {
+  background-color: var(--color1);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.h5-border-color {
+  border-radius: 50px;
+  border: 2px solid var(--color2);
+  cursor: pointer;
+}
+
+.h5-border-color:hover {
+  background-color: var(--color2);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.forwhom h5 {
+  padding: 50px;
+}
+
+.online-color {
+  background-color: var(--color2);
+  color: white;
+  cursor: pointer;
+}
+
+.online-color:hover {
+  background-color: var(--color1);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card-img-top {
+  max-width: 80px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.card-title {
+  margin-bottom: 30px;
+}
+
+.btn-theme {
+  background-color: var(--color2);
+  color: white;
+}
+
+.btn-theme:hover {
+  background-color: var(--color1);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.block-online {
+  margin-bottom: 45px;
+}
+
+.footer-text {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.border-top {
+  border-top: 4px solid var(--color2);
+}
+
+/* Бургер-меню */
+
+.menu-burger {
+  display: none;
+}
+
+/* @media */
+
+@media (max-width: 990px) {
+  .cont-header {
+    display: none;
+  }
+
+  .menu-burger {
+    display: block;
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  .menu__btn {
+    display: block;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+  }
+
+  .menu__btn span {
+    display: block;
+    margin-bottom: 10px;
+    background-color: var(--color2);
+    height: 4px;
+  }
+
+  .menu__list {
+    display: none;
+    padding-top: 60px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .border-end {
+    border-bottom: 4px solid var(--color2);
+  }
+
+  .menu__list-link {
+    display: block;
+    border-top: 4px solid var(--color2);
+    transition: all 0s;
+    color: black;
+    outline: none;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .menu__list-item {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .menu__list-link:hover {
+    border-bottom: 4px solid transparent;
+    color: var(--color1);
+  }
+}
